@@ -1,0 +1,578 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Moon+Dance&family=Noto+Sans+TC:wght@500&family=Oswald&family=Pacifico&family=Poppins:wght@500&display=swap');
+
+
+  html{
+    font-family: 'Poppins', sans-serif;
+  }
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: relative;
+    width: 100%;
+    height: 630px;
+    padding: 10px;
+}
+header::before{
+    content: "";
+    position: absolute;
+    width: 40%;
+    right: 3%;
+    background: linear-gradient(0deg , #ffb12a, #fec140);
+    border-radius: 0 50px 0 0;
+    z-index: -1;
+    height: 100%;
+}
+
+header nav {
+    width: 80%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .logo_ul {
+    display: flex;
+    align-items: center;
+}
+
+header nav .logo_ul img{
+    width: 40px;
+    margin: 20px;
+
+}
+header nav .logo_ul ul{
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+}
+header nav .logo_ul li{
+    list-style: none;
+    padding: 1px 8px;
+    margin-right: 12px;
+    
+}
+header nav .logo_ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    font-weight: 600;
+    transition: .3s linear;
+}
+header nav .logo_ul ul li:nth-last-child(1){
+    background: #0080006e;
+    border-radius: 10px;
+    padding: 2px 12px;
+}
+header nav .logo_ul ul li:nth-last-child(1) a{
+    color: #fff;
+}
+header nav .logo_ul ul li:nth-last-child(1) a i{
+    margin-left: 5px;
+}
+header nav .logo_ul ul li:nth-last-child(1) a:hover{
+    color: rgb(0, 0, 0,.2);
+}
+header nav .logo_ul li a:hover {
+    color: rgb(0, 0, 0,.2);
+
+}
+
+header nav .contact_select {
+    display: flex;
+    list-style: none;
+    position: absolute;
+    right: 75px;
+}
+
+header nav .contact_select li a {
+  font-size: 13px;
+  color: #fff;
+  margin-right: 10px;
+  text-decoration: none;
+  
+  
+}
+
+header nav .contact_select li:nth-child(2) {
+  background: #fff;
+  border-radius: 10px;
+  padding: 2px 13px 1px 13px;
+  width: 100px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 18px;
+}
+header nav .contact_select li:nth-child(2):hover{
+    background: rgb(0, 0, 0,.2);
+}
+
+/* section start  */
+section{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    margin-top: 20px;
+
+}
+section .container , .img_bx {
+    position: relative;
+    width: 40%;
+    padding: 10px;
+
+
+}
+section .img_bx {
+    width: 60%;
+
+    
+}
+section .content h5{
+    background-color: #f04417;
+    display: unset;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 10px;
+    margin: 10px;
+}
+section .content h1{
+    margin-top: 5px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 53px;
+    line-height: 55px;
+    letter-spacing: -2px;
+    margin: 6px;
+}
+
+
+section .content .para{
+    margin-top: 30px;
+    width: 300px;
+    font-size: 12px;
+    margin: 8px;
+    opacity: 50%;   
+}
+
+section .content h6{
+    margin: 7px;
+    margin-top: 20px;
+    color: gray;
+}
+
+section .content .img_icon{
+ display: flex;   
+ align-items: center;
+ gap: -1px;
+}
+
+section .content .img_icon h6{
+    background-color: #00a950;
+    color: #fff;
+    border-radius: 50%;
+    padding: 8px 10px;
+    position: relative;
+    top: -10px;  
+}
+
+section .content .order_rate{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+section .content .order_rate a{
+    background: #000;
+    border-radius: 10px;
+    padding: 7px 15px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: .3s linear;
+    margin: 6px;
+}
+
+section .content .order_rate a:hover{
+    background: #00a950;
+}
+
+section .content .order_rate h2{
+    margin-left: 30px;
+    color: #00a950;
+    font-size: 30px;
+    font-family: 900;
+
+}
+
+section .content .order_rate h2 sup{
+    margin-left: 5px;
+    color: #a3ca72;
+    font-size: 16px;
+    font-weight: 900;
+    position: relative;
+    top: -5px;
+}
+
+section .content .food_slider{
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    justify-content: space-between;
+}
+
+section .content .food_slider::-webkit-scrollbar{
+    display: none;
+}
+section .content .food_slider img{
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    cursor: pointer;
+    margin: 6px;
+    opacity: .3;
+    transition: .3s linear;
+}
+
+section .content .food_slider img:nth-child(1) {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+section .content .food_slider img:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+section .img_bx .images{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    scroll-behavior: smooth;
+    overflow-x: auto;
+    margin-top: 110px;
+    
+}
+section .img_bx .images::-webkit-scrollbar {
+    display: none;
+}
+section .img_bx .images img {
+    width: 50%;
+    margin-right: 100px;
+    filter: blur(1.5px);
+    transition: .3s linear;
+   
+    
+}
+section .img_bx .images img:nth-child(1){
+    width: 65%;
+    filter: blur(0px);
+}
+
+section .img_bx .slide_btns{
+    position: absolute;
+    bottom: 10px;
+    left: 20.5%;
+    width: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+section .img_bx .slide_btns i{
+    background: #ff8e27;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+section .img_bx .slide_btns i:hover{
+    background-color: #f04417;
+}
+
+section .img_bx .burger_badge{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 12%;
+    right: 22%;
+    z-index: 99999;
+}
+section .img_bx .burger_badge .badge_card{
+    width: 75px;
+    height: 90px;
+    background: #fff;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0,.05);
+    margin-right: 5px;
+    border-radius: 5px 5px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+section .img_bx .burger_badge .badge_card p{
+    color: gray;
+    font-size: 11px;
+}
+section .img_bx .burger_badge .badge_card h5{
+    color: #f04417;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.del{
+    width: 100%;
+    height: auto;
+    background-color: #fbf8f2;
+    margin: auto;
+    padding: 40px 10%;
+    display: flex;
+    align-items: center;
+}
+.del .cont h1{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.del1 .cont1 h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.del1{
+    position: absolute;
+    right: 80px;
+}
+.del .cont p{
+    font-size: 12px;
+    color: rgb(0, 0, 0,.5);
+    font-weight: 600;
+    margin: 15px 0;
+}
+.del1 .cont1 p{
+    font-size: 12px;
+    color: rgb(0, 0, 0,.5);
+    font-weight: 600;
+    margin: 15px 0;
+}
+.del .cont button{
+    background-color: #00a950;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.del1 .cont1 button{
+    background-color: #00a950;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.del .cont button:hover{
+    background: #000;
+}
+.del1 .cont1 button:hover{
+    background: #000;
+}
+.del img:nth-child(2) {
+    width: 260px;
+    transform: translateX(-100px) translateY(300px);
+ 
+  position: absolute;
+  top: 74%;
+left: 36%;
+    
+}
+.del img:nth-child(3) {
+    width: 190px;
+    transform: translateX(80px);
+    margin-top: 20px;
+ 
+
+}
+
+.food_chart{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+  bottom: -135%;
+  right: 0;
+    
+}
+.food_chart .food_bx {
+    position: relative;
+    width: 440px;
+    height: 380px;
+    background-color: #00a950;
+    padding: 60px 50px;
+    z-index: 2;
+    
+}
+
+.food_chart .food_bx:nth-child(2){
+    width: 40%;
+    background-color: #f04417;
+}
+.food_chart .food_bx:nth-child(3){
+    width: 40%;
+    background-color: #a1cf67;
+}
+.food_chart .food_bx .cont1 h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 40px;
+line-height: 50px;
+color: #fff;
+
+}
+.food_chart .food_bx .cont1 p{
+    font-size: 11px;
+    color: #fff;
+    margin-top: 18px;
+}
+.food_chart .food_bx .cont1 button{
+    background-color: #000;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.food_chart .food_bx .cont1 button:hover{
+    background-color: #a1cf67;
+}
+.food_chart .food_bx .cont1 {
+    position: relative;
+    z-index: 2;
+}
+
+.food_chart .food_bx img{
+    position: absolute;
+    left: 65%;
+    top: -55%;
+    width: 280px;
+    height: 250px;
+    z-index: 0;
+  
+}
+
+.food1{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 235%;
+    left: 0;
+}
+.food1 .ssr_bx{
+    position: relative;
+    width: 490px;
+    height: 230px;
+    background-color: blue;
+    padding: 60px 50px;
+    z-index: 2;
+}
+.food1 .ssr_bx img{
+    width: 210px;
+    position: absolute;
+    left: 55%;
+    top: 55px;
+    
+ 
+}
+.food1 .ssr_bx h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 30px;
+line-height: 50px;
+color: #fff;
+
+
+line-height: 25px;
+}
+.food1 .ssr_bx p{
+    font-size: 11px;
+    color: #fff;
+    margin-top: 18px;
+}
+.food1 .ssr_bx button{
+    background-color: #000;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 9px 15px;
+    color: #fff;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s linear;
+}
+.food1 .ssr_bx button:hover{
+    background-color: #a1cf67;
+}
+.food1 .ssr_bx:nth-child(2){
+    width: 35%;
+    background-color: #cc0404;
+}
+.food1 .ssr_bx:nth-child(3){
+    width: 30%;
+    background-color: #fff;
+}
+.food1 .ssr_bx .rrr{
+    width: 100px;
+    position: absolute;
+    left: 75%;
+    top: 55px;
+  
+}
+.food1 .ssr_bx .hhh{
+    color: #000;
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 35px;
+   
+}
+.food1 .ssr_bx i{
+    background: #ff8e27;
+    color: #fff;
+    border-radius: 50%;
+    padding: 4px 8px;
+    cursor: pointer;
+    transition: .3s linear;
+    position: absolute;
+    bottom: 5px;
+}
+.food1 .ssr_bx i:hover{
+    background-color: #000;
+}
+

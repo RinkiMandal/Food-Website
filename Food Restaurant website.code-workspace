@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "Food Restaurant website",
+			"path": "."
+		},
+		{
+			"name": "img",
+			"path": "../../../Downloads/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Food Restaurant website"
+	}
+}
